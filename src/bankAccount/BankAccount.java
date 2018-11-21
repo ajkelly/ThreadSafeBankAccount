@@ -1,4 +1,4 @@
-package bankAcount;
+package bankAccount;
 
 import java.text.DecimalFormat;
 import java.util.concurrent.locks.Lock;
@@ -86,7 +86,8 @@ public class BankAccount {
                     ex.printStackTrace();
                 }
                 balance += amount;
-                System.out.println(accountHolderName + " deposited: " + money.format(amount) + " for " + Thread.currentThread().getName());
+                System.out.println(money.format(amount) + " deposited into " + accountHolderName + "'s account for "
+                                    + Thread.currentThread().getName());
                 return true;
             } finally {
                 lock.unlock();

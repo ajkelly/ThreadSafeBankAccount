@@ -1,4 +1,4 @@
-package bankAcount;
+package bankAccount;
 
 /**
  * @author Alex Kelly
